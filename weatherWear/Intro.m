@@ -7,6 +7,7 @@
 //
 
 #import "Intro.h"
+#import "Declarations.h"
 
 @interface Intro ()
 
@@ -33,5 +34,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+//-------------------------------------------------------------------------------
+-(void)viewWillAppear:(BOOL)animated {
+    self.introLbl.text  = introTitles[self.iPageIndex];
+    self.introImg.image = [UIImage imageNamed:introImgs[self.iPageIndex]];
+    if (self.iPageIndex == 2)
+    {
+        self.introBtn.hidden = NO;
+    }
+    self.introLogoImg.image = [UIImage imageNamed:@"wwLogo.png"];
+}
 
+- (IBAction)introBtnPressed:(id)sender {
+}
 @end

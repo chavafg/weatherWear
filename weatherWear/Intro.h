@@ -10,4 +10,15 @@
 
 @interface Intro : UIViewController
 
+@property NSUInteger                                iPageIndex;
+
+@property (strong, nonatomic) IBOutlet UIImageView *introLogoImg;
+@property (strong, nonatomic) IBOutlet UILabel *introLbl;
+@property (strong, nonatomic) IBOutlet UIButton *introBtn;
+@property (strong, nonatomic) IBOutlet UIImageView *introImg;
+
+
+
+- (IBAction)introBtnPressed:(id)sender;
+
 @end

@@ -21,7 +21,7 @@
         <!--Page View Controller-->
         <scene sceneID="JLC-Z4-mXI">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="vpx-3K-1BP" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageIntroController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="vpx-3K-1BP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0P-K7-ALn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="563" y="329"/>
@@ -29,13 +29,13 @@
         <!--Intro-->
         <scene sceneID="kNV-v9-cj6">
             <objects>
-                <viewController id="Bqc-JN-aOs" customClass="Intro" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Intro" id="Bqc-JN-aOs" customClass="Intro" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nek-f5-BhC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="IoM-tj-V77" userLabel="introLogoImg">
-                                <rect key="frame" x="200" y="40" width="113" height="138"/>
+                                <rect key="frame" x="197" y="40" width="113" height="138"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qaz-ls-EHL" userLabel="introLbl">
@@ -54,10 +54,23 @@
                                     <color key="titleColor" red="0.1288458871" green="0.14992984270000001" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="introBtnPressed:" destination="Bqc-JN-aOs" eventType="touchUpInside" id="CUj-Lw-uyC"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Q7K-gZ-ynY" userLabel="introImg">
+                                <rect key="frame" x="40" y="186" width="240" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="introBtn" destination="q6P-gK-BUP" id="IQd-tk-r1m"/>
+                        <outlet property="introImg" destination="Q7K-gZ-ynY" id="J5E-3q-rok"/>
+                        <outlet property="introLbl" destination="qaz-ls-EHL" id="kXj-MI-uh5"/>
+                        <outlet property="introLogoImg" destination="IoM-tj-V77" id="o9k-vp-Jsh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6jd-rC-kJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
