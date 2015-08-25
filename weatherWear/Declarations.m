@@ -8,6 +8,9 @@
 
 #import "Declarations.h"
 
+NSMutableArray *introTitles;
+NSMutableArray *introImgs;
+
 @implementation Declarations
 
 @end

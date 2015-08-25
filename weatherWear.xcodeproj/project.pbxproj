@@ -16,6 +16,8 @@
 		68BC02C21B8C152F008CBFFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68BC02C01B8C152F008CBFFF /* LaunchScreen.xib */; };
 		68BC02CE1B8C152F008CBFFF /* weatherWearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02CD1B8C152F008CBFFF /* weatherWearTests.m */; };
 		68BC02DC1B8C15F1008CBFFF /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02DB1B8C15F1008CBFFF /* Declarations.m */; };
+		68BC02DF1B8C1EAA008CBFFF /* wwLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 68BC02DE1B8C1EAA008CBFFF /* wwLogo.png */; };
+		68BC02E21B8C201E008CBFFF /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02E11B8C201E008CBFFF /* Intro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		68BC02CD1B8C152F008CBFFF /* weatherWearTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weatherWearTests.m; sourceTree = "<group>"; };
 		68BC02DA1B8C15F1008CBFFF /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
 		68BC02DB1B8C15F1008CBFFF /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
+		68BC02DE1B8C1EAA008CBFFF /* wwLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wwLogo.png; sourceTree = "<group>"; };
+		68BC02E01B8C201E008CBFFF /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
+		68BC02E11B8C201E008CBFFF /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,7 @@
 		68BC02AD1B8C152F008CBFFF /* weatherWear */ = {
 			isa = PBXGroup;
 			children = (
+				68BC02DD1B8C1C82008CBFFF /* Images */,
 				68BC02D91B8C156A008CBFFF /* Cells */,
 				68BC02D81B8C1561008CBFFF /* Controllers */,
 				68BC02D71B8C1537008CBFFF /* Main */,
@@ -140,6 +146,8 @@
 			children = (
 				68BC02B81B8C152F008CBFFF /* Start.h */,
 				68BC02B91B8C152F008CBFFF /* Start.m */,
+				68BC02E01B8C201E008CBFFF /* Intro.h */,
+				68BC02E11B8C201E008CBFFF /* Intro.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -149,6 +157,14 @@
 			children = (
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		68BC02DD1B8C1C82008CBFFF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				68BC02DE1B8C1EAA008CBFFF /* wwLogo.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BC02DF1B8C1EAA008CBFFF /* wwLogo.png in Resources */,
 				68BC02BD1B8C152F008CBFFF /* Main.storyboard in Resources */,
 				68BC02C21B8C152F008CBFFF /* LaunchScreen.xib in Resources */,
 				68BC02BF1B8C152F008CBFFF /* Images.xcassets in Resources */,
@@ -251,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BC02E21B8C201E008CBFFF /* Intro.m in Sources */,
 				68BC02B41B8C152F008CBFFF /* AppDelegate.m in Sources */,
 				68BC02B11B8C152F008CBFFF /* main.m in Sources */,
 				68BC02BA1B8C152F008CBFFF /* Start.m in Sources */,
