@@ -10,11 +10,12 @@
 		68BC02B11B8C152F008CBFFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02B01B8C152F008CBFFF /* main.m */; };
 		68BC02B41B8C152F008CBFFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02B31B8C152F008CBFFF /* AppDelegate.m */; };
 		68BC02B71B8C152F008CBFFF /* weatherWear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02B51B8C152F008CBFFF /* weatherWear.xcdatamodeld */; };
-		68BC02BA1B8C152F008CBFFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02B91B8C152F008CBFFF /* ViewController.m */; };
+		68BC02BA1B8C152F008CBFFF /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02B91B8C152F008CBFFF /* Start.m */; };
 		68BC02BD1B8C152F008CBFFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BC02BB1B8C152F008CBFFF /* Main.storyboard */; };
 		68BC02BF1B8C152F008CBFFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68BC02BE1B8C152F008CBFFF /* Images.xcassets */; };
 		68BC02C21B8C152F008CBFFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68BC02C01B8C152F008CBFFF /* LaunchScreen.xib */; };
 		68BC02CE1B8C152F008CBFFF /* weatherWearTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02CD1B8C152F008CBFFF /* weatherWearTests.m */; };
+		68BC02DC1B8C15F1008CBFFF /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02DB1B8C15F1008CBFFF /* Declarations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +35,16 @@
 		68BC02B21B8C152F008CBFFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		68BC02B31B8C152F008CBFFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		68BC02B61B8C152F008CBFFF /* weatherWear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = weatherWear.xcdatamodel; sourceTree = "<group>"; };
-		68BC02B81B8C152F008CBFFF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		68BC02B91B8C152F008CBFFF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		68BC02B81B8C152F008CBFFF /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		68BC02B91B8C152F008CBFFF /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 		68BC02BC1B8C152F008CBFFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68BC02BE1B8C152F008CBFFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		68BC02C11B8C152F008CBFFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		68BC02C71B8C152F008CBFFF /* weatherWearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weatherWearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BC02CC1B8C152F008CBFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68BC02CD1B8C152F008CBFFF /* weatherWearTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weatherWearTests.m; sourceTree = "<group>"; };
+		68BC02DA1B8C15F1008CBFFF /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		68BC02DB1B8C15F1008CBFFF /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +86,9 @@
 		68BC02AD1B8C152F008CBFFF /* weatherWear */ = {
 			isa = PBXGroup;
 			children = (
-				68BC02B21B8C152F008CBFFF /* AppDelegate.h */,
-				68BC02B31B8C152F008CBFFF /* AppDelegate.m */,
-				68BC02B81B8C152F008CBFFF /* ViewController.h */,
-				68BC02B91B8C152F008CBFFF /* ViewController.m */,
+				68BC02D91B8C156A008CBFFF /* Cells */,
+				68BC02D81B8C1561008CBFFF /* Controllers */,
+				68BC02D71B8C1537008CBFFF /* Main */,
 				68BC02BB1B8C152F008CBFFF /* Main.storyboard */,
 				68BC02BE1B8C152F008CBFFF /* Images.xcassets */,
 				68BC02C01B8C152F008CBFFF /* LaunchScreen.xib */,
@@ -120,6 +122,33 @@
 				68BC02CC1B8C152F008CBFFF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68BC02D71B8C1537008CBFFF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				68BC02B21B8C152F008CBFFF /* AppDelegate.h */,
+				68BC02B31B8C152F008CBFFF /* AppDelegate.m */,
+				68BC02DA1B8C15F1008CBFFF /* Declarations.h */,
+				68BC02DB1B8C15F1008CBFFF /* Declarations.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		68BC02D81B8C1561008CBFFF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				68BC02B81B8C152F008CBFFF /* Start.h */,
+				68BC02B91B8C152F008CBFFF /* Start.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		68BC02D91B8C156A008CBFFF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +253,9 @@
 			files = (
 				68BC02B41B8C152F008CBFFF /* AppDelegate.m in Sources */,
 				68BC02B11B8C152F008CBFFF /* main.m in Sources */,
-				68BC02BA1B8C152F008CBFFF /* ViewController.m in Sources */,
+				68BC02BA1B8C152F008CBFFF /* Start.m in Sources */,
 				68BC02B71B8C152F008CBFFF /* weatherWear.xcdatamodeld in Sources */,
+				68BC02DC1B8C15F1008CBFFF /* Declarations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
