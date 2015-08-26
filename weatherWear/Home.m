@@ -1,20 +1,20 @@
 //
-//  Intro.m
+//  Home.m
 //  weatherWear
 //
-//  Created by chava on 8/24/15.
+//  Created by chava on 8/25/15.
 //  Copyright (c) 2015 fuentess. All rights reserved.
 //
 
-#import "Intro.h"
-#import "Declarations.h"
 #import "Home.h"
+#import "Inventory.h"
+#import "Recommendation.h"
 
-@interface Intro ()
+@interface Home ()
 
 @end
 
-@implementation Intro
+@implementation Home
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,19 +35,23 @@
     // Pass the selected object to the new view controller.
 }
 */
-//-------------------------------------------------------------------------------
+
 -(void)viewWillAppear:(BOOL)animated {
-    self.introLbl.text  = introTitles[self.iPageIndex];
-    self.introImg.image = [UIImage imageNamed:introImgs[self.iPageIndex]];
-    if (self.iPageIndex == 2)
-    {
-        self.introBtn.hidden = NO;
-    }
-    self.introLogoImg.image = [UIImage imageNamed:@"wwLogo.png"];
+    
+    self.recommendImg.image = [UIImage imageNamed:@"wwLogo.png"];
 }
 
-- (IBAction)introBtnPressed:(id)sender {
-    Home *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Home"];
+
+- (IBAction)inventoryPressed:(id)sender {
+
+    Inventory *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Inventory"];
     [self presentViewController:vc animated:YES completion:nil];
+
+}
+
+- (IBAction)recommendPressed:(id)sender {
+    Recommendation *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Recommendation"];
+    [self presentViewController:vc animated:YES completion:nil];
+
 }
 @end

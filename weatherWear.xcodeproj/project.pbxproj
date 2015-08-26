@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		687BB2A51B8D684400CBF043 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 687BB2A41B8D684400CBF043 /* Home.m */; };
+		687BB2A81B8D6DCB00CBF043 /* Recommendation.m in Sources */ = {isa = PBXBuildFile; fileRef = 687BB2A71B8D6DCB00CBF043 /* Recommendation.m */; };
+		687BB2AB1B8D6DE100CBF043 /* Inventory.m in Sources */ = {isa = PBXBuildFile; fileRef = 687BB2AA1B8D6DE100CBF043 /* Inventory.m */; };
 		68BC02B11B8C152F008CBFFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02B01B8C152F008CBFFF /* main.m */; };
 		68BC02B41B8C152F008CBFFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02B31B8C152F008CBFFF /* AppDelegate.m */; };
 		68BC02B71B8C152F008CBFFF /* weatherWear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02B51B8C152F008CBFFF /* weatherWear.xcdatamodeld */; };
@@ -31,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		687BB2A31B8D684400CBF043 /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		687BB2A41B8D684400CBF043 /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		687BB2A61B8D6DCB00CBF043 /* Recommendation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recommendation.h; sourceTree = "<group>"; };
+		687BB2A71B8D6DCB00CBF043 /* Recommendation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recommendation.m; sourceTree = "<group>"; };
+		687BB2A91B8D6DE100CBF043 /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inventory.h; sourceTree = "<group>"; };
+		687BB2AA1B8D6DE100CBF043 /* Inventory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inventory.m; sourceTree = "<group>"; };
 		68BC02AB1B8C152F008CBFFF /* weatherWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BC02AF1B8C152F008CBFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68BC02B01B8C152F008CBFFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,6 +157,12 @@
 				68BC02B91B8C152F008CBFFF /* Start.m */,
 				68BC02E01B8C201E008CBFFF /* Intro.h */,
 				68BC02E11B8C201E008CBFFF /* Intro.m */,
+				687BB2A31B8D684400CBF043 /* Home.h */,
+				687BB2A41B8D684400CBF043 /* Home.m */,
+				687BB2A61B8D6DCB00CBF043 /* Recommendation.h */,
+				687BB2A71B8D6DCB00CBF043 /* Recommendation.m */,
+				687BB2A91B8D6DE100CBF043 /* Inventory.h */,
+				687BB2AA1B8D6DE100CBF043 /* Inventory.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -268,10 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				687BB2A81B8D6DCB00CBF043 /* Recommendation.m in Sources */,
+				687BB2AB1B8D6DE100CBF043 /* Inventory.m in Sources */,
 				68BC02E21B8C201E008CBFFF /* Intro.m in Sources */,
 				68BC02B41B8C152F008CBFFF /* AppDelegate.m in Sources */,
 				68BC02B11B8C152F008CBFFF /* main.m in Sources */,
 				68BC02BA1B8C152F008CBFFF /* Start.m in Sources */,
+				687BB2A51B8D684400CBF043 /* Home.m in Sources */,
 				68BC02B71B8C152F008CBFFF /* weatherWear.xcdatamodeld in Sources */,
 				68BC02DC1B8C15F1008CBFFF /* Declarations.m in Sources */,
 			);
@@ -468,6 +486,7 @@
 				68BC02D31B8C152F008CBFFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68BC02D41B8C152F008CBFFF /* Build configuration list for PBXNativeTarget "weatherWearTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +495,7 @@
 				68BC02D61B8C152F008CBFFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
