@@ -1,18 +1,18 @@
 //
-//  Recommendation.m
+//  ClothingAddition.m
 //  weatherWear
 //
 //  Created by chava on 8/25/15.
 //  Copyright (c) 2015 fuentess. All rights reserved.
 //
 
-#import "Recommendation.h"
+#import "ClothingAddition.h"
 
-@interface Recommendation ()
+@interface ClothingAddition ()
 
 @end
 
-@implementation Recommendation
+@implementation ClothingAddition
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,6 +24,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    
+    self.bckIcon.image = [UIImage imageNamed:@"back_button.png"];
+}
 /*
 #pragma mark - Navigation
 
@@ -35,6 +39,10 @@
 */
 
 - (IBAction)okBtnPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)bckBtnPressed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

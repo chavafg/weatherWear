@@ -24,6 +24,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    
+    self.bckIcon.image = [UIImage imageNamed:@"back_button.png"];
+}
 /*
 #pragma mark - Navigation
 
@@ -34,4 +38,7 @@
 }
 */
 
+- (IBAction)bckBtnPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

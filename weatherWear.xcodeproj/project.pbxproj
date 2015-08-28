@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		685B4FEB1B90075F00209703 /* back_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 685B4FEA1B90075F00209703 /* back_button.png */; };
 		687BB2A51B8D684400CBF043 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 687BB2A41B8D684400CBF043 /* Home.m */; };
 		687BB2A81B8D6DCB00CBF043 /* Recommendation.m in Sources */ = {isa = PBXBuildFile; fileRef = 687BB2A71B8D6DCB00CBF043 /* Recommendation.m */; };
 		687BB2AB1B8D6DE100CBF043 /* Inventory.m in Sources */ = {isa = PBXBuildFile; fileRef = 687BB2AA1B8D6DE100CBF043 /* Inventory.m */; };
+		687BB2AE1B8D71B300CBF043 /* ClothingAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 687BB2AD1B8D71B300CBF043 /* ClothingAddition.m */; };
 		68BC02B11B8C152F008CBFFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02B01B8C152F008CBFFF /* main.m */; };
 		68BC02B41B8C152F008CBFFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02B31B8C152F008CBFFF /* AppDelegate.m */; };
 		68BC02B71B8C152F008CBFFF /* weatherWear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68BC02B51B8C152F008CBFFF /* weatherWear.xcdatamodeld */; };
@@ -34,12 +36,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		685B4FEA1B90075F00209703 /* back_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_button.png; sourceTree = "<group>"; };
 		687BB2A31B8D684400CBF043 /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		687BB2A41B8D684400CBF043 /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
 		687BB2A61B8D6DCB00CBF043 /* Recommendation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recommendation.h; sourceTree = "<group>"; };
 		687BB2A71B8D6DCB00CBF043 /* Recommendation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recommendation.m; sourceTree = "<group>"; };
 		687BB2A91B8D6DE100CBF043 /* Inventory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inventory.h; sourceTree = "<group>"; };
 		687BB2AA1B8D6DE100CBF043 /* Inventory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inventory.m; sourceTree = "<group>"; };
+		687BB2AC1B8D71B300CBF043 /* ClothingAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClothingAddition.h; sourceTree = "<group>"; };
+		687BB2AD1B8D71B300CBF043 /* ClothingAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothingAddition.m; sourceTree = "<group>"; };
 		68BC02AB1B8C152F008CBFFF /* weatherWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BC02AF1B8C152F008CBFFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68BC02B01B8C152F008CBFFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -163,6 +168,8 @@
 				687BB2A71B8D6DCB00CBF043 /* Recommendation.m */,
 				687BB2A91B8D6DE100CBF043 /* Inventory.h */,
 				687BB2AA1B8D6DE100CBF043 /* Inventory.m */,
+				687BB2AC1B8D71B300CBF043 /* ClothingAddition.h */,
+				687BB2AD1B8D71B300CBF043 /* ClothingAddition.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 		68BC02DD1B8C1C82008CBFFF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				685B4FEA1B90075F00209703 /* back_button.png */,
 				68BC02DE1B8C1EAA008CBFFF /* wwLogo.png */,
 			);
 			name = Images;
@@ -264,6 +272,7 @@
 			files = (
 				68BC02DF1B8C1EAA008CBFFF /* wwLogo.png in Resources */,
 				68BC02BD1B8C152F008CBFFF /* Main.storyboard in Resources */,
+				685B4FEB1B90075F00209703 /* back_button.png in Resources */,
 				68BC02C21B8C152F008CBFFF /* LaunchScreen.xib in Resources */,
 				68BC02BF1B8C152F008CBFFF /* Images.xcassets in Resources */,
 			);
@@ -292,6 +301,7 @@
 				687BB2A51B8D684400CBF043 /* Home.m in Sources */,
 				68BC02B71B8C152F008CBFFF /* weatherWear.xcdatamodeld in Sources */,
 				68BC02DC1B8C15F1008CBFFF /* Declarations.m in Sources */,
+				687BB2AE1B8D71B300CBF043 /* ClothingAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

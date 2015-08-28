@@ -10,4 +10,9 @@
 
 @interface Inventory : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIImageView *bckIcon;
+@property (strong, nonatomic) IBOutlet UIButton *bckBtn;
+
+- (IBAction)bckBtnPressed:(id)sender;
+
 @end
