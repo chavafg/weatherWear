@@ -151,6 +151,15 @@
                                     <action selector="bckBtnPressed:" destination="oQQ-Oe-XQ4" eventType="touchUpInside" id="UQN-ZX-uQO"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="TXR-mW-dDB">
+                                <rect key="frame" x="0.0" y="100" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oQQ-Oe-XQ4" id="mSN-qA-n9P"/>
+                                    <outlet property="delegate" destination="oQQ-Oe-XQ4" id="3sc-sd-JwL"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

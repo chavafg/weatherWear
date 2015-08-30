@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Inventory : UIViewController
+@interface Inventory : UIViewController<UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *bckIcon;
 @property (strong, nonatomic) IBOutlet UIButton *bckBtn;

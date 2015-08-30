@@ -10,6 +10,12 @@
 
 extern NSMutableArray *introTitles;
 extern NSMutableArray *introImgs;
+extern NSMutableArray *maShirts;
+extern NSMutableArray *maJeans;
+extern NSMutableArray *maShorts;
+extern NSMutableArray *maShoes;
+extern int myIndex;
+
 
 @interface Declarations : NSObject
 

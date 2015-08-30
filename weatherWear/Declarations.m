@@ -10,6 +10,11 @@
 
 NSMutableArray *introTitles;
 NSMutableArray *introImgs;
+NSMutableArray *maShirts;
+NSMutableArray *maJeans;
+NSMutableArray *maShorts;
+NSMutableArray *maShoes;
+int myIndex = 0;
 
 @implementation Declarations
 

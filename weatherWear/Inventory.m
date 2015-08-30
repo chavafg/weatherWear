@@ -7,6 +7,8 @@
 //
 
 #import "Inventory.h"
+#import "clothesCell.h"
+#import "Declarations.h"
 
 @interface Inventory ()
 
@@ -17,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self initController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,7 +42,61 @@
 }
 */
 
+- (void)initController{
+    maShirts = [[NSMutableArray alloc] initWithObjects:@"Shirt 1", @"Shirt 2", @"Shirt 3", @"Shirt 4", nil];
+    maJeans = [[NSMutableArray alloc] initWithObjects:@"Jeans 1", @"Jeans 2", @"Jeans 3", @"Jeans 4", nil];
+    maShoes = [[NSMutableArray alloc] initWithObjects:@"Black Shoes", @"Sneakers", @"Sandals", @"Boots", nil];
+ 
+}
+
+
 - (IBAction)bckBtnPressed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+
+/**********************************************************************************************/
+#pragma mark - Table source and delegate methods
+/**********************************************************************************************/
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 3;
+}
+//-------------------------------------------------------------------------------
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 4;
+}
+//-------------------------------------------------------------------------------
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 64;
+}
+//-------------------------------------------------------------------------------
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //Initialize cells
+    clothesCell *cell = (clothesCell *)[tableView dequeueReusableCellWithIdentifier:@"clothesCell"];
+    
+    if (cell == nil) {
+        [tableView registerNib:[UINib nibWithNibName:@"clothesCell" bundle:nil] forCellReuseIdentifier:@"clothesCell"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"clothesCell"];
+    }
+    
+    //Fill cell with info from arrays
+    cell.clothLbl.text  = maShirts[indexPath.row];
+    cell.delImg.image   = [UIImage imageNamed:@"delete_button.png"];
+    return cell;
+}
+//-------------------------------------------------------------------------------
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    //myIndex = (int)indexPath.row;
+    //Mapa *viewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Mapa"];
+    //[self presentViewController:viewController animated:YES completion:nil];
+    
+}
+
+
 @end
