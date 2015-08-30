@@ -36,11 +36,11 @@
 }
 */
 
+
 -(void)viewWillAppear:(BOOL)animated {
     
     self.recommendImg.image = [UIImage imageNamed:@"wwLogo.png"];
 }
-
 
 - (IBAction)inventoryPressed:(id)sender {
 

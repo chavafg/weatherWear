@@ -9,6 +9,7 @@
 #import "Inventory.h"
 #import "clothesCell.h"
 #import "Declarations.h"
+#import "ClothingAddition.h"
 
 @interface Inventory ()
 
@@ -31,6 +32,7 @@
 -(void)viewWillAppear:(BOOL)animated {
     
     self.bckIcon.image = [UIImage imageNamed:@"back_button.png"];
+    self.addIcon.image = [UIImage imageNamed:@"add_btn.png"];
 }
 /*
 #pragma mark - Navigation
@@ -46,12 +48,17 @@
     maShirts = [[NSMutableArray alloc] initWithObjects:@"Shirt 1", @"Shirt 2", @"Shirt 3", @"Shirt 4", nil];
     maJeans = [[NSMutableArray alloc] initWithObjects:@"Jeans 1", @"Jeans 2", @"Jeans 3", @"Jeans 4", nil];
     maShoes = [[NSMutableArray alloc] initWithObjects:@"Black Shoes", @"Sneakers", @"Sandals", @"Boots", nil];
- 
+    maClothSections = [[NSMutableArray alloc] initWithObjects:@"SHIRTS", @"Jeans", @"Shoes", @"Skirts", nil];
 }
 
 
 - (IBAction)bckBtnPressed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)addBtnPressed:(id)sender {
+    ClothingAddition *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"ClothingAddition"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 
@@ -85,10 +92,18 @@
     
     //Fill cell with info from arrays
     cell.clothLbl.text  = maShirts[indexPath.row];
-    cell.delImg.image   = [UIImage imageNamed:@"delete_button.png"];
+    cell.delImg.image   = [UIImage imageNamed:@"delete_btn.png"];
     return cell;
 }
 //-------------------------------------------------------------------------------
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    NSString * title = [maClothSections objectAtIndex:section];
+    return title;
+}
+
+//-------------------------------------------------------------------------------
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     

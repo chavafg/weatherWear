@@ -12,7 +12,11 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *bckIcon;
 @property (strong, nonatomic) IBOutlet UIButton *bckBtn;
+@property (strong, nonatomic) IBOutlet UIImageView *addIcon;
+
 
 - (IBAction)bckBtnPressed:(id)sender;
+- (IBAction)addBtnPressed:(id)sender;
+
 
 @end
