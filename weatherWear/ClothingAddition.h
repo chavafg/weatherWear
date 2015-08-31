@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ClothingAddition : UIViewController
+@interface ClothingAddition : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *bckIcon;
 @property (strong, nonatomic) IBOutlet UIButton *okBtn;
 @property (strong, nonatomic) IBOutlet UIButton *bckBtn;
+@property (strong, nonatomic) IBOutlet UIPickerView *clothesPicker;
 
 
 - (IBAction)okBtnPressed:(id)sender;

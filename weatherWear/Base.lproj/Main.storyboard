@@ -228,12 +228,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What would you like to add?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Qf3-Lk-dwd" userLabel="lbl01">
+                                <rect key="frame" x="16" y="113" width="264" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" id="Hbi-la-7Uf" userLabel="clothesPicker">
+                                <rect key="frame" x="0.0" y="142" width="320" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WCs-i9-RZ8" id="gi1-3R-Zst"/>
+                                    <outlet property="delegate" destination="WCs-i9-RZ8" id="9rX-V4-WcD"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="bckBtn" destination="cqJ-rR-YhJ" id="gRx-Bb-yDG"/>
                         <outlet property="bckIcon" destination="IOH-Jw-5qi" id="K4D-N7-yzC"/>
+                        <outlet property="clothesPicker" destination="Hbi-la-7Uf" id="waj-V1-tNn"/>
                         <outlet property="okBtn" destination="GN5-pq-uO3" id="ktM-Aa-nrp"/>
                     </connections>
                 </viewController>

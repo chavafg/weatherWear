@@ -7,6 +7,9 @@
 //
 
 #import "ClothingAddition.h"
+#import "Declarations.h"
+
+NSString        *stSelectedState;
 
 @interface ClothingAddition ()
 
@@ -45,4 +48,36 @@
 - (IBAction)bckBtnPressed:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+/**********************************************************************************************/
+#pragma mark - Picker view methods
+/**********************************************************************************************/
+- (NSInteger)numberOfComponentsInPickerView: (UIPickerView *)pickerView {
+    return 1;
+}
+//------------------------------------------------------------------
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    
+    NSLog(@"icon %lu", (unsigned long)maClothSections.count);
+    return maClothSections.count;
+}
+//------------------------------------------------------------------
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return maClothSections[row];
+}
+//------------------------------------------------------------------
+- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
+    return 30;
+}
+//------------------------------------------------------------------
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    NSLog(@"Picker");
+    if (pickerView == self.clothesPicker)
+    {
+        stSelectedState = maClothSections[row];
+    }
+}
+
+
 @end
