@@ -20,6 +20,9 @@ NSString        *stSelectedState;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.scrollView 	setScrollEnabled:YES];
+    [self.scrollView    setContentSize:CGSizeMake(320, 768)];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,13 +44,7 @@ NSString        *stSelectedState;
 }
 */
 
-- (IBAction)okBtnPressed:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 
-- (IBAction)bckBtnPressed:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 
 /**********************************************************************************************/
 #pragma mark - Picker view methods
@@ -63,7 +60,9 @@ NSString        *stSelectedState;
 }
 //------------------------------------------------------------------
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return maClothSections[row];
+    
+        return maClothSections[row];
+
 }
 //------------------------------------------------------------------
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
@@ -77,7 +76,15 @@ NSString        *stSelectedState;
     {
         stSelectedState = maClothSections[row];
     }
+    
 }
 
 
+- (IBAction)bckBtnPressed:(id)sender {
+   [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)okBtnPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
