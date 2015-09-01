@@ -14,6 +14,7 @@ NSMutableArray *maShirts;
 NSMutableArray *maJeans;
 NSMutableArray *maShorts;
 NSMutableArray *maShoes;
+NSMutableArray *maSueter;
 NSMutableArray *maClothSections;
 NSMutableArray *maClothCategory;
 

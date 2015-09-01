@@ -48,8 +48,11 @@
     maShirts = [[NSMutableArray alloc] initWithObjects:@"Playera Nike", @"Camisa Dockers", @"Playera Tommy", @"Polo DKNY", nil];
     maJeans = [[NSMutableArray alloc] initWithObjects:@"Jeans Levis", @"Short A&E", @"Pantalon Zara", @"Jeans CK", nil];
     maShoes = [[NSMutableArray alloc] initWithObjects:@"Zapatos ", @"Tenis Reebok", @"Sandalias Tommy", @"Botas CAT", nil];
-    maClothSections = [[NSMutableArray alloc] initWithObjects:@"Playera", @"Jeans", @"Zapatos", @"Shorts", @"Vestido",@"Chamarra",@"Polo",@"Camisa",@"Zapatillas",@"Sueter", nil];
+    maClothSections = [[NSMutableArray alloc] initWithObjects:@"Playera", @"Jeans", @"Zapatos", @"Sueteres",nil];
+    //@"Vestido",@"Chamarra",@"Polo",@"Camisa",@"Zapatillas",@"Sueter", nil];
     maClothCategory = [[NSMutableArray alloc] initWithObjects:@"Frio", @"Lluvioso", @"La Calor", @"Nublado", nil];
+    maSueter = [[NSMutableArray alloc] initWithObjects:@"Sueter GAP", @"Sueter Aero", @"Sueter Lacoste", @"Sueter Banana Republic", nil];
+    
 }
 
 
@@ -68,12 +71,22 @@
 /**********************************************************************************************/
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return maClothSections.count;
 }
 //-------------------------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    
+    if(section == 0)
+        return maShirts.count;
+    if(section == 1)
+        return maJeans.count;
+    if(section == 2)
+        return maShoes.count;
+    else
+        return maSueter.count;
+    
+
 }
 //-------------------------------------------------------------------------------
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -92,8 +105,17 @@
     }
     
     //Fill cell with info from arrays
-    cell.clothLbl.text  = maShirts[indexPath.row];
+    if(indexPath.section == 0)
+        cell.clothLbl.text  = maShirts[indexPath.row];
+    if(indexPath.section == 1)
+        cell.clothLbl.text  = maJeans[indexPath.row];
+    if(indexPath.section == 2)
+        cell.clothLbl.text  = maShoes[indexPath.row];
+    if(indexPath.section == 3)
+        cell.clothLbl.text  = maSueter[indexPath.row];
+    
     cell.delImg.image   = [UIImage imageNamed:@"delete_btn.png"];
+    
     return cell;
 }
 //-------------------------------------------------------------------------------
