@@ -44,6 +44,8 @@
         self.introBtn.hidden = NO;
     }
     self.introLogoImg.image = [UIImage imageNamed:@"wwLogo.png"];
+    [self.view bringSubviewToFront:self.introLbl];
+    [self.view bringSubviewToFront:self.introBtn];
 }
 
 - (IBAction)introBtnPressed:(id)sender {
