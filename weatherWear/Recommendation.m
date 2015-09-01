@@ -32,7 +32,7 @@
     self.shoesImg.image =  [UIImage imageNamed:@"shoes.png"];
     self.weatherImg.image =  [UIImage imageNamed:@"cloudy.png"];
     self.placeLbl.text  = @"Guadalajara, Jalisco";
-    self.degreesLbl.text = @"27 Grados Centigrados";
+    self.degreesLbl.text = @"20 Grados Centigrados";
 
     self.topLbl.text = @"Playera Tommy";
     self.extraLbl.text = @"Sueter CK";

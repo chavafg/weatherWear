@@ -95,13 +95,6 @@ NSString        *stSelectedCategory;
 }
 
 - (IBAction)okBtnPressed:(id)sender {
-    
-    if (self.colorTxt == nil || stSelectedCategory == nil || stSelectedSection == nil ){
-        
-    }
-    else{
-        [self dismissViewControllerAnimated:YES completion:nil];
-        
-    }
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
