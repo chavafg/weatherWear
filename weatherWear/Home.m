@@ -39,7 +39,7 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     
-    self.recommendImg.image = [UIImage imageNamed:@"wwLogo.png"];
+    self.recommendImg.image = [UIImage imageNamed:@"logo.png"];
 }
 
 - (IBAction)inventoryPressed:(id)sender {

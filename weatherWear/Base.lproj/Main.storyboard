@@ -89,20 +89,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="HrA-Ug-RiV" userLabel="recommendImg">
-                                <rect key="frame" x="50" y="100" width="220" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="HrA-Ug-RiV" userLabel="recommendImg">
+                                <rect key="frame" x="50" y="100" width="220" height="250"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rUA-4f-Vzw" userLabel="recommendBtn">
-                                <rect key="frame" x="50" y="100" width="220" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="recommendPressed:" destination="ewv-o5-7Xy" eventType="touchUpInside" id="yxy-AP-4Tf"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GUb-2b-cgY" userLabel="inventoryBtn">
                                 <rect key="frame" x="60" y="448" width="200" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -113,6 +103,16 @@
                                 </state>
                                 <connections>
                                     <action selector="inventoryPressed:" destination="ewv-o5-7Xy" eventType="touchUpInside" id="Lnb-Uo-d2G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rUA-4f-Vzw" userLabel="recommendBtn">
+                                <rect key="frame" x="50" y="100" width="220" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recommendPressed:" destination="ewv-o5-7Xy" eventType="touchUpInside" id="yxy-AP-4Tf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -366,13 +366,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uYk-p1-LxF" userLabel="degreesLbl">
-                                <rect key="frame" x="77" y="105" width="166" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vHB-20-PM5" userLabel="topLbl">
                                 <rect key="frame" x="88" y="202" width="199" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -405,11 +398,29 @@
                                 <rect key="frame" x="16" y="253" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uYk-p1-LxF" userLabel="degreesLbl">
+                                <rect key="frame" x="47" y="100" width="227" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="bottomImg" destination="JUf-nT-BuH" id="8V9-IY-Fd6"/>
+                        <outlet property="bottomLbl" destination="m9E-ZV-b6I" id="EHy-Sw-E5c"/>
+                        <outlet property="degreesLbl" destination="uYk-p1-LxF" id="dm5-FY-iPS"/>
+                        <outlet property="extraImg" destination="JpM-Qc-lsj" id="2mk-d2-XHb"/>
+                        <outlet property="extraLbl" destination="SA1-Ed-ebg" id="Jl2-Nf-jNm"/>
                         <outlet property="okBtn" destination="oXy-CT-h6C" id="g4d-Bc-INk"/>
+                        <outlet property="placeLbl" destination="v32-kC-LTX" id="WFG-Q7-jRU"/>
+                        <outlet property="shoesImg" destination="Igw-1z-ibc" id="3dM-HO-phK"/>
+                        <outlet property="shoesLbl" destination="eQh-9j-5Xy" id="bYS-0W-Aov"/>
+                        <outlet property="topImb" destination="dZu-Bw-AWM" id="5zs-e3-1Ih"/>
+                        <outlet property="topLbl" destination="vHB-20-PM5" id="2kA-EC-aSa"/>
+                        <outlet property="weatherImg" destination="iF8-RH-xj8" id="Npy-3u-07v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d8K-Qe-IVQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -17,12 +17,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self initController];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)initController {
+    self.topImb.image =  [UIImage imageNamed:@"polo.png"];
+    self.bottomImg.image =  [UIImage imageNamed:@"jeans.png"];
+    self.extraImg.image =  [UIImage imageNamed:@"sueter.png"];
+    self.shoesImg.image =  [UIImage imageNamed:@"shoes.png"];
+    self.weatherImg.image =  [UIImage imageNamed:@"cloudy.png"];
+    self.placeLbl.text  = @"Guadalajara, Jalisco";
+    self.degreesLbl.text = @"27 Grados Centigrados";
+
+    self.topLbl.text = @"Playera Tommy";
+    self.extraLbl.text = @"Sueter CK";
+    self.bottomLbl.text = @"Jeans Levi's";
+    self.shoesLbl.text = @"Zapatos ";
+}
+
 
 /*
 #pragma mark - Navigation
