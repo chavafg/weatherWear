@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		353C44401B951A7E00975ACA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 353C443F1B951A7E00975ACA /* logo.png */; };
+		35A751B91B952AA700E2C3F5 /* camisa.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A751AF1B952AA700E2C3F5 /* camisa.png */; };
+		35A751BA1B952AA700E2C3F5 /* chamarra.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A751B01B952AA700E2C3F5 /* chamarra.png */; };
+		35A751BB1B952AA700E2C3F5 /* jeans.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A751B11B952AA700E2C3F5 /* jeans.png */; };
+		35A751BC1B952AA700E2C3F5 /* playera.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A751B21B952AA700E2C3F5 /* playera.png */; };
+		35A751BD1B952AA700E2C3F5 /* polo.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A751B31B952AA700E2C3F5 /* polo.png */; };
+		35A751BE1B952AA700E2C3F5 /* shoes.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A751B41B952AA700E2C3F5 /* shoes.png */; };
+		35A751BF1B952AA700E2C3F5 /* short.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A751B51B952AA700E2C3F5 /* short.png */; };
+		35A751C01B952AA700E2C3F5 /* sueter.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A751B61B952AA700E2C3F5 /* sueter.png */; };
+		35A751C11B952AA700E2C3F5 /* vestido.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A751B71B952AA700E2C3F5 /* vestido.png */; };
+		35A751C21B952AA700E2C3F5 /* zapatillas.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A751B81B952AA700E2C3F5 /* zapatillas.png */; };
 		685B4FEB1B90075F00209703 /* back_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 685B4FEA1B90075F00209703 /* back_button.png */; };
 		685B4FF21B901D0100209703 /* clothesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 685B4FF01B901D0100209703 /* clothesCell.m */; };
 		685B4FF31B901D0100209703 /* clothesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 685B4FF11B901D0100209703 /* clothesCell.xib */; };
@@ -42,6 +52,16 @@
 
 /* Begin PBXFileReference section */
 		353C443F1B951A7E00975ACA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		35A751AF1B952AA700E2C3F5 /* camisa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camisa.png; sourceTree = "<group>"; };
+		35A751B01B952AA700E2C3F5 /* chamarra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chamarra.png; sourceTree = "<group>"; };
+		35A751B11B952AA700E2C3F5 /* jeans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeans.png; sourceTree = "<group>"; };
+		35A751B21B952AA700E2C3F5 /* playera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playera.png; sourceTree = "<group>"; };
+		35A751B31B952AA700E2C3F5 /* polo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = polo.png; sourceTree = "<group>"; };
+		35A751B41B952AA700E2C3F5 /* shoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoes.png; sourceTree = "<group>"; };
+		35A751B51B952AA700E2C3F5 /* short.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = short.png; sourceTree = "<group>"; };
+		35A751B61B952AA700E2C3F5 /* sueter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sueter.png; sourceTree = "<group>"; };
+		35A751B71B952AA700E2C3F5 /* vestido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vestido.png; sourceTree = "<group>"; };
+		35A751B81B952AA700E2C3F5 /* zapatillas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zapatillas.png; sourceTree = "<group>"; };
 		685B4FEA1B90075F00209703 /* back_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_button.png; sourceTree = "<group>"; };
 		685B4FEF1B901D0100209703 /* clothesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clothesCell.h; sourceTree = "<group>"; };
 		685B4FF01B901D0100209703 /* clothesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clothesCell.m; sourceTree = "<group>"; };
@@ -198,6 +218,16 @@
 		68BC02DD1B8C1C82008CBFFF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				35A751AF1B952AA700E2C3F5 /* camisa.png */,
+				35A751B01B952AA700E2C3F5 /* chamarra.png */,
+				35A751B11B952AA700E2C3F5 /* jeans.png */,
+				35A751B21B952AA700E2C3F5 /* playera.png */,
+				35A751B31B952AA700E2C3F5 /* polo.png */,
+				35A751B41B952AA700E2C3F5 /* shoes.png */,
+				35A751B51B952AA700E2C3F5 /* short.png */,
+				35A751B61B952AA700E2C3F5 /* sueter.png */,
+				35A751B71B952AA700E2C3F5 /* vestido.png */,
+				35A751B81B952AA700E2C3F5 /* zapatillas.png */,
 				353C443F1B951A7E00975ACA /* logo.png */,
 				686283AC1B929BE1002160A0 /* add_btn.png */,
 				686283AD1B929BE1002160A0 /* delete_btn.png */,
@@ -287,15 +317,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35A751C11B952AA700E2C3F5 /* vestido.png in Resources */,
 				685B4FF31B901D0100209703 /* clothesCell.xib in Resources */,
 				68BC02DF1B8C1EAA008CBFFF /* wwLogo.png in Resources */,
 				353C44401B951A7E00975ACA /* logo.png in Resources */,
 				68BC02BD1B8C152F008CBFFF /* Main.storyboard in Resources */,
+				35A751C21B952AA700E2C3F5 /* zapatillas.png in Resources */,
+				35A751BE1B952AA700E2C3F5 /* shoes.png in Resources */,
 				685B4FEB1B90075F00209703 /* back_button.png in Resources */,
 				68BC02C21B8C152F008CBFFF /* LaunchScreen.xib in Resources */,
 				68BC02BF1B8C152F008CBFFF /* Images.xcassets in Resources */,
+				35A751BC1B952AA700E2C3F5 /* playera.png in Resources */,
+				35A751C01B952AA700E2C3F5 /* sueter.png in Resources */,
 				686283AE1B929BE1002160A0 /* add_btn.png in Resources */,
+				35A751BA1B952AA700E2C3F5 /* chamarra.png in Resources */,
+				35A751BB1B952AA700E2C3F5 /* jeans.png in Resources */,
+				35A751BF1B952AA700E2C3F5 /* short.png in Resources */,
+				35A751BD1B952AA700E2C3F5 /* polo.png in Resources */,
 				686283AF1B929BE1002160A0 /* delete_btn.png in Resources */,
+				35A751B91B952AA700E2C3F5 /* camisa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
