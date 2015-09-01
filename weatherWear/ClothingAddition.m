@@ -9,7 +9,8 @@
 #import "ClothingAddition.h"
 #import "Declarations.h"
 
-NSString        *stSelectedState;
+NSString        *stSelectedSection;
+NSString        *stSelectedCategory;
 
 @interface ClothingAddition ()
 
@@ -56,13 +57,20 @@ NSString        *stSelectedState;
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     
     NSLog(@"icon %lu", (unsigned long)maClothSections.count);
-    return maClothSections.count;
+    
+    if (pickerView == self.clothesPicker){
+        return maClothSections.count;
+    }
+    else
+        return maClothCategory.count;
 }
 //------------------------------------------------------------------
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    
+    if (pickerView == self.clothesPicker){
         return maClothSections[row];
-
+    }
+    else
+        return maClothCategory[row];
 }
 //------------------------------------------------------------------
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component {
@@ -74,8 +82,10 @@ NSString        *stSelectedState;
     NSLog(@"Picker");
     if (pickerView == self.clothesPicker)
     {
-        stSelectedState = maClothSections[row];
+        stSelectedSection = maClothSections[row];
     }
+    else
+        stSelectedSection = maClothCategory[row];
     
 }
 
@@ -85,6 +95,13 @@ NSString        *stSelectedState;
 }
 
 - (IBAction)okBtnPressed:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    if (self.colorTxt == nil || stSelectedCategory == nil || stSelectedSection == nil ){
+        
+    }
+    else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    }
 }
 @end

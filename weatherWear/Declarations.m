@@ -15,6 +15,7 @@ NSMutableArray *maJeans;
 NSMutableArray *maShorts;
 NSMutableArray *maShoes;
 NSMutableArray *maClothSections;
+NSMutableArray *maClothCategory;
 
 int myIndex = 0;
 

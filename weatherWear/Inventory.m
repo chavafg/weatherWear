@@ -45,10 +45,11 @@
 */
 
 - (void)initController{
-    maShirts = [[NSMutableArray alloc] initWithObjects:@"Shirt 1", @"Shirt 2", @"Shirt 3", @"Shirt 4", nil];
+    maShirts = [[NSMutableArray alloc] initWithObjects:@"Playera 1", @"Playera 2", @"Playera 3", @"Playera 4", nil];
     maJeans = [[NSMutableArray alloc] initWithObjects:@"Jeans 1", @"Jeans 2", @"Jeans 3", @"Jeans 4", nil];
-    maShoes = [[NSMutableArray alloc] initWithObjects:@"Black Shoes", @"Sneakers", @"Sandals", @"Boots", nil];
-    maClothSections = [[NSMutableArray alloc] initWithObjects:@"SHIRTS", @"Jeans", @"Shoes", @"Skirts", nil];
+    maShoes = [[NSMutableArray alloc] initWithObjects:@"Zapatos", @"Tenis", @"Sandalias", @"Botas", nil];
+    maClothSections = [[NSMutableArray alloc] initWithObjects:@"Playera", @"Jeans", @"Zapatos", @"Shorts", @"Vestido",@"Chamarra",@"Polo",@"Camisa",@"Zapatillas",@"Sueter", nil];
+    maClothCategory = [[NSMutableArray alloc] initWithObjects:@"Frio", @"Lluvioso", @"La Calor", @"Nublado", nil];
 }
 
 

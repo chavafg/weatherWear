@@ -15,6 +15,7 @@ extern NSMutableArray *maJeans;
 extern NSMutableArray *maShorts;
 extern NSMutableArray *maShoes;
 extern NSMutableArray *maClothSections;
+extern NSMutableArray *maClothCategory;
 extern int myIndex;
 
 
